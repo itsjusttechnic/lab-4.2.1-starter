@@ -13,15 +13,17 @@
     <!-- <div class="has-text-success-dark is-size-4  has-text-weight-medium"> -->
     <div>
         <a href="{{ url_for('home') }}">
-            Home
+            <b>Home</b>
         </a>
-        &nbsp;&nbsp;
-        <a href="{{ url_for('all_pages') }}">
-            Pages
-        </a>
+
         &nbsp;&nbsp;
         <a href="{{ url_for('about') }}">
-            About
+            <b>About</b>
+        </a>
+
+        &nbsp;&nbsp;
+        <a href="{{ url_for('all_pages') }}">
+            <b>Pages</b>
         </a>
     </div>
 
@@ -32,5 +34,9 @@
     </div>
 
 </body>
+<p>
+
+    <img src="{{ url_for('images', image='welcomepic') }}">
+    </p>
 
 </html>
